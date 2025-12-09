@@ -9,15 +9,14 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #f3f7f3;
-            color: #2f2f2f;
+            background: #eef2ee;
         }
 
         header {
             background: #2e7d32;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 25px;
         }
 
         .container {
@@ -27,40 +26,45 @@
 
         .products {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
         }
 
         .product {
-            background: white;
+            background: #fff;
             padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.03);
         }
 
         .product img {
             width: 100%;
-            height: 170px;
+            height: 180px;
             object-fit: cover;
-            border-radius: 5px;
+            border-radius: 8px;
         }
 
         .btn {
             display: inline-block;
             margin-top: 10px;
-            padding: 10px 15px;
             background: #43a047;
             color: white;
+            padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
         }
 
         footer {
-            margin-top: 40px;
+            text-align: center;
             background: #1b5e20;
             color: white;
-            text-align: center;
             padding: 15px;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -69,39 +73,100 @@
 
 <header>
     <h1>EcoTroca</h1>
-    <p>Troque itens que você não usa mais e reduza seu impacto no planeta 🌎</p>
+    <p>Troque itens que você não usa mais 🌱</p>
 </header>
 
 <div class="container">
-    <h2>Itens disponíveis para troca</h2>
+    <h2>Itens disponíveis</h2>
 
     <div class="products">
+
         <!-- 1 Bicicleta infantil -->
-<img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg" alt="Bicicleta infantil">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1520950237264-8f21f4e08ec0" alt="Bicicleta infantil">
+            <h3>Bicicleta infantil</h3>
+            <p>Em ótimo estado, perfeita para crianças.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 2 Violão -->
-<img src="https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg" alt="Violão acústico">
+        <!-- 2 Violão -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" alt="Violão">
+            <h3>Violão acústico</h3>
+            <p>Som limpo, ideal para iniciantes.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 3 Liquidificador -->
-<img src="https://images.pexels.com/photos/593827/pexels-photo-593827.jpeg" alt="Liquidificador">
+        <!-- 3 Liquidificador -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31b" alt="Liquidificador">
+            <h3>Liquidificador</h3>
+            <p>Funcionando perfeitamente, pouco uso.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 4 Roupas infantis -->
-<img src="https://images.pexels.com/photos/45982/pexels-photo-45982.jpeg" alt="Roupas infantis">
+        <!-- 4 Roupas infantis -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" alt="Roupas infantis">
+            <h3>Roupas infantis</h3>
+            <p>Pacote com roupas tamanho 4-6 anos.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 5 Jogos de tabuleiro -->
-<img src="https://images.pexels.com/photos/1310845/pexels-photo-1310845.jpeg" alt="Jogos de tabuleiro">
+        <!-- 5 Jogos de tabuleiro -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1589578527966-fb1d56f39264" alt="Jogos de tabuleiro">
+            <h3>Jogos de tabuleiro</h3>
+            <p>Kit com 3 jogos em ótimo estado.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 6 Cafeteira elétrica -->
-<img src="https://images.pexels.com/photos/585753/pexels-photo-585753.jpeg" alt="Cafeteira elétrica">
+        <!-- 6 Cafeteira -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e" alt="Cafeteira elétrica">
+            <h3>Cafeteira elétrica</h3>
+            <p>Faz cafés rápidos e saborosos.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 7 Monitor -->
-<img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" alt="Monitor">
+        <!-- 7 Monitor -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3" alt="Monitor">
+            <h3>Monitor 22"</h3>
+            <p>Tela Full HD, ideal para trabalho.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 8 Livros de romance -->
-<img src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg" alt="Livros">
+        <!-- 8 Livros -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1516974409142-1b796f9ce89a" alt="Livros">
+            <h3>Livros de romance</h3>
+            <p>Kit com 5 livros em ótimo estado.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 9 Tênis esportivo -->
-<img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Tênis esportivo">
+        <!-- 9 Tênis -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1528701800489-20be3c2a3cf0" alt="Tênis esportivo">
+            <h3>Tênis esportivo</h3>
+            <p>Tamanho 39, usado poucas vezes.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
 
-<!-- 10 Mochila escolar -->
-<img src="https://images.pexels.com/photos/697044/pexels-photo-697044.jpeg" alt="Mochila escolar">
+        <!-- 10 Mochila -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1514473776127-61e2dc1e5f41" alt="Mochila escolar">
+            <h3>Mochila escolar</h3>
+            <p>Várias repartições, material resistente.</p>
+            <a href="#" class="btn">Quero trocar</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2025 EcoTroca – Plataforma de Trocas Sustentáveis
+</footer>
+
+</body>
+</html>
