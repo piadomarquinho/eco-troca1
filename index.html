@@ -1,74 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTroca – Trocas Sustentáveis</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #eef2ee;
-        }
-
-        header {
-            background: #2e7d32;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        .container {
-            width: 90%;
-            margin: 30px auto;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .product {
-            background: #fff;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-            transition: 0.3s;
-        }
-
-        .product:hover {
-            transform: scale(1.03);
-        }
-
-        .product img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 10px;
-            background: #43a047;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        footer {
-            text-align: center;
-            background: #1b5e20;
-            color: white;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoTroca – Trocas Sustentáveis</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #eef2ee;
+    }
+    header {
+        background-color: #2e7d32;
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+    header h1 {
+        margin: 0;
+    }
+    .container {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    .product {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        padding: 15px;
+    }
+    .product img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .btn {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #43a047;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    footer {
+        text-align: center;
+        background-color: #1b5e20;
+        color: white;
+        padding: 15px;
+        margin-top: 40px;
+    }
+</style>
 </head>
-
 <body>
 
 <header>
@@ -78,85 +67,75 @@
 
 <div class="container">
     <h2>Itens disponíveis</h2>
-
     <div class="products">
 
-        <!-- 1 Bicicleta infantil -->
         <div class="product">
-            <img src="img/bicicleta-infantil-free-action-aro-16-joy_1049235 (3).webp" alt="Bicicleta infantil">
-            <p>Em ótimo estado, perfeita para crianças.</p>
+            <img src="img/bicicleta.jpg" alt="Bicicleta infantil">
+            <h3>Bicicleta infantil</h3>
+            <p>Perfeita para crianças, pouco usada.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 2 Violão -->
         <div class="product">
-            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" alt="Violão">
+            <img src="img/violao.jpg" alt="Violão acústico">
             <h3>Violão acústico</h3>
-            <p>Som limpo, ideal para iniciantes.</p>
+            <p>Instrumento bem conservado, som limpo.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 3 Liquidificador -->
         <div class="product">
-            <img src="img/1056036_liquidificador-britania-black-600w-21-litros-3-velocidades-funcao-pulsar-10008241_m24_638546514079720821" alt="Liquidificador">
+            <img src="img/liquidificador.jpg" alt="Liquidificador">
             <h3>Liquidificador</h3>
-            <p>Funcionando perfeitamente, pouco uso.</p>
+            <p>Em ótimo estado, funciona perfeitamente.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 4 Roupas infantis -->
         <div class="product">
-            <img src="D_NQ_NP_618370-MLB72184854558_102023-O-kit-roupas-infantil-menino-vero-conjunto-masculino-juvenil" alt="Roupas infantis">
+            <img src="img/roupas_infantis.jpg" alt="Roupas infantis">
             <h3>Roupas infantis</h3>
-            <p>Pacote com roupas tamanho 4-6 anos.</p>
+            <p>Kit de roupas 4–6 anos, quase novas.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 5 Jogos de tabuleiro -->
         <div class="product">
-            <img src="Jogo-de-Tabuleiro---Banco-Imobiliario---Estrela-2" alt="Jogos de tabuleiro">
+            <img src="img/jogos_tabuleiro.jpg" alt="Jogos de tabuleiro">
             <h3>Jogos de tabuleiro</h3>
-            <p>Kit com 3 jogos em ótimo estado.</p>
+            <p>Três jogos completos, usados mas em bom estado.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 6 Cafeteira -->
         <div class="product">
-            <img src="">
+            <img src="img/cafeteira.jpg" alt="Cafeteira elétrica">
             <h3>Cafeteira elétrica</h3>
-            <p>Faz cafés rápidos e saborosos.</p>
+            <p>Modelo prático e funcional, perfeito para café diário.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 7 Monitor -->
         <div class="product">
-            <img src="img/Hot-Sales-18-5-21-5-24-Inch-LCD-Monitor-High-Quality-FHD-Display-Panel-Home-Office-Monitor-VGA-HDMI-OEM" alt="Monitor">
+            <img src="img/monitor.jpg" alt="Monitor 22">
             <h3>Monitor 22"</h3>
-            <p>Tela Full HD, ideal para trabalho.</p>
+            <p>Tela Full HD, ótimo para estudo ou home office.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 8 Livros -->
         <div class="product">
-            <img src="img/174827825468349bee15244_1748278254_16x9_sm (1)" alt="Livros">
+            <img src="img/livros.jpg" alt="Livros de romance">
             <h3>Livros de romance</h3>
-            <p>Kit com 5 livros em ótimo estado.</p>
+            <p>Conjunto com 5 títulos variados, em bom estado.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 9 Tênis -->
         <div class="product">
-            <img src="https://images.unsplash.com/photo-1528701800489-20be3c2a3cf0" alt="Tênis esportivo">
+            <img src="img/tenis.jpg" alt="Tênis esportivo">
             <h3>Tênis esportivo</h3>
-            <p>Tamanho 39, usado poucas vezes.</p>
+            <p>Tamanho 39, pouco usado, confortável.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
-        <!-- 10 Mochila -->
         <div class="product">
-            <img src="img/mochila_masculina_shock_matelasse_cinza_7011_1_2e01bb2707da32f4832791271694fa24" alt="Mochila escolar">
+            <img src="img/mochila.jpg" alt="Mochila escolar">
             <h3>Mochila escolar</h3>
-            <p>Várias repartições, material resistente.</p>
+            <p>Resistente, espaçosa e em ótimo estado.</p>
             <a href="#" class="btn">Quero trocar</a>
         </div>
 
